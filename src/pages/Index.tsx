@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ServiceCard } from "@/components/ServiceCard";
+import { ContactForm } from "@/components/ContactForm";
 import {
   Zap,
   Flame,
@@ -14,6 +16,7 @@ import {
 import heroImage from "@/assets/hero-engineering.jpg";
 
 const Index = () => {
+  const [contactFormOpen, setContactFormOpen] = useState(false);
   const services = [
     {
       icon: Leaf,
@@ -71,8 +74,8 @@ const Index = () => {
     },
   ];
 
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  const openContactForm = () => {
+    setContactFormOpen(true);
   };
 
   return (
@@ -93,7 +96,7 @@ const Index = () => {
                 Contact
               </a>
             </div>
-            <Button onClick={scrollToContact} className="bg-accent hover:bg-accent/90">
+            <Button onClick={openContactForm} className="bg-accent hover:bg-accent/90">
               Get Started
             </Button>
           </div>
@@ -126,7 +129,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                onClick={scrollToContact}
+                onClick={openContactForm}
                 className="bg-primary hover:bg-primary/90 text-lg px-8"
               >
                 Start Your Project
@@ -206,7 +209,11 @@ const Index = () => {
             Get in touch with our team of experts to discuss your building systems requirements
             and discover how we can help bring your project to life.
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-lg px-12">
+          <Button
+            size="lg"
+            onClick={openContactForm}
+            className="bg-accent hover:bg-accent/90 text-lg px-12"
+          >
             Contact Us Today
           </Button>
         </div>
@@ -218,6 +225,9 @@ const Index = () => {
           <p>&copy; 2024 Divya Singham Consultancy. All rights reserved.</p>
         </div>
       </footer>
+
+      {/* Contact Form Dialog */}
+      <ContactForm open={contactFormOpen} onOpenChange={setContactFormOpen} />
     </div>
   );
 };
