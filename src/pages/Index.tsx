@@ -81,7 +81,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-primary">MEP Consultancy</h1>
+            <h1 className="text-2xl font-bold text-primary">Divya Singham Consultancy</h1>
             <div className="hidden md:flex gap-8">
               <a href="#services" className="text-foreground hover:text-primary transition-colors">
                 Services
@@ -215,7 +215,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-border">
         <div className="container mx-auto text-center text-muted-foreground">
-          <p>&copy; 2024 MEP Consultancy. All rights reserved.</p>
+          <p>&copy; 2024 Divya Singham Consultancy. All rights reserved.</p>
         </div>
       </footer>
     </div>
