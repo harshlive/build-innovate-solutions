@@ -14,6 +14,7 @@ To connect your contact form to Google Sheets, follow these steps:
 3. Paste the following code:
 
 ```javascript
+
 function doPost(e) {
   try {
     // Parse the incoming data
@@ -51,9 +52,9 @@ function doPost(e) {
 
 function sendNotificationEmail(data) {
   // Configuration - UPDATE THESE VALUES
-  const NOTIFICATION_EMAIL = "your-email@example.com"; // Change this to your email
+  const NOTIFICATION_EMAIL = "harshranjan1995@gmail.com"; // Change this to your email
   const CC_EMAIL = ""; // Optional: Add CC email addresses separated by commas
-  const SHEET_URL = "https://docs.google.com/spreadsheets/d/1cF4N5IRI3Jpuvnxq2kODn_lfqOSsgUX2MDHlL6O15SM/edit?gid=0#gid=0"; // Your Google Sheet URL
+  const SHEET_URL = "https://docs.google.com/spreadsheets/d/1hm5wWpqYNW7XnF0lz_0VaZXU2WJWGCqsQmPJSL8R0EM/edit?hl=en&pli=1&gid=0"; // Your Google Sheet URL
   
   try {
     // Email subject
