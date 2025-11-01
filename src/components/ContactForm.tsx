@@ -75,7 +75,7 @@ export const ContactForm = ({ open, onOpenChange }: ContactFormProps) => {
 
     try {
       // Replace this URL with your Google Apps Script Web App URL
-      const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxjcKBqIP_9d-HnDhR2VDYPWObnZSpOatBT-9I0AMXy7L_L73J5ODYb_jCA0c1atnVM-g/exec";
+      const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw3U8fZQvKGPI0TbRWUcyoulWKmOmroc63d0NmOAkQJk7f8cIuQhyvieAoOLw1A_5ZgHA/exec";
 
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
